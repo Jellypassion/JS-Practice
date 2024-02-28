@@ -176,7 +176,7 @@
 
 // const fruts = [
 //   { id: 0, name: "Apple" },
-//   { id: 1, name: "Tomat" },
+//   { id: 1, name: "Tomato" },
 //   { id: 2, name: "Cherry" },
 //   { id: 3, name: "Orange" },
 // ];
@@ -211,10 +211,10 @@
 
 // console.log(red);
 
-// let arr = [23, 45, 30];
+let arr = [23, 45, 30];
 
-// let summ = arr.reduce((sum, item) => sum + item) / arr.length;
-// console.log(summ);
+let summ = arr.reduce((sum, item) => sum + item) / arr.length;
+console.log(summ);
 
 // знайти користувачів, для яких army.canJoin повертає true
 let army = {
