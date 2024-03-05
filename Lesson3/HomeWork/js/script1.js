@@ -4,7 +4,7 @@
 
 const fruts = [
   { id: 0, name: "Apple" },
-  { id: 1, name: "Tomat" },
+  { id: 1, name: "Tomato" },
   { id: 2, name: "Cherry" },
   { id: 3, name: "Orange" },
 ];
@@ -57,6 +57,6 @@ const girls = [
 ];
 
 let midAge =
-    girls.map((girl) => girl.age)
-        .reduce((sum, current) => sum + current) / girls.length;
+  girls.map((girl) => girl.age)
+      .reduce((sum, current) => sum + current) / girls.length;
 console.log(Math.round(midAge));
