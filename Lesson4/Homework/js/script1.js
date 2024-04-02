@@ -43,5 +43,14 @@ const yes = "Ви погодились.";
 const no = "Ви скасували виконання.";
 
 let reply = confirm(question);
+// let replyAction = (reply) => {
+//   return reply ? () => alert(yes) : () => alert(no);
+// };
 let replyAction = reply ? () => alert(yes) : () => alert(no);
-replyAction();
+//replyAction();
+
+let a = 1;
+a += 1;
+a++;
+
+console.log(a);
