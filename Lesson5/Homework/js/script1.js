@@ -93,7 +93,8 @@ const banana = {
 //   .querySelector("#calc")
 //   .addEventListener("click", item.calcTotalPrice.bind(banana));
 
-//
+// v2 (take data from inputs)
+// doesn't work as expected
 const itemFromInput = {
   name: nameRef.value,
   pricePerKg: pricePerKgRef.value,
@@ -105,4 +106,12 @@ const itemFromInput = {
     console.log("Total Price: " + price);
   },
 };
-calcButtonRef.addEventListener("click", itemFromInput.calcPrice);
+let totalPrice = function calcPrice(pricePerKg, amount) {
+  let price = pricePerKg * amount;
+  console.log(`name: ${this.name}, totalPrice: ${price}`);
+};
+
+calcButtonRef.addEventListener(
+  "click",
+  totalPrice.bind(itemFromInput, pricePerKgRef.value, amountRef.value)
+);
