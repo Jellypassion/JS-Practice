@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 10</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <p>Імʼя</p>
+      <input id="name" class="inputName" />
+      <p>Прізвище</p>
+      <input id="lastName" class="inputLastName" />
+      <div>
+        <p>Стать</p>
+        <!-- Для того щоб Radio були в одній групі, потрібно задати їм однакове значення атрибута name -->
+        <input
+          type="radio"
+          id="male"
+          class="checkMale"
+          value="male"
+          name="sex"
+          onchange="checkSex()"
+        />
+        <label for="male">Чоловіча</label>
+        <!-- Задаємо функцію check() для onChange, функцію реалізуємо у коді JS -->
+        <input
+          type="radio"
+          id="female"
+          class="checkMale"
+          value="female"
+          name="sex"
+          onchange="checkSex()"
+        />
+        <label for="female">Жіноча</label>
+      </div>
+      <div class="isOldEnoughSection" style="margin-top: 10px">
+        <label for="isOldEnough">Мені є 18 років</label>
+        <input type="checkbox" id="isOldEnough" class="isOldEnoughCheckBox" />
+      </div>
+      <div style="margin-top: 25px">
+        <button type="submit">Відправити</button>
+      </div>
+    </form>
+    <script src="./js/script1.js"></script>
+  </body>
+</html>
